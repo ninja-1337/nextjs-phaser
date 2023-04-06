@@ -48,42 +48,38 @@ export class MainScene extends Scene {
 
    
   }
-  update(){
+  update(time:0.01){
     if (this.cursors.left.isDown)
 {
     this.player.setVelocityX(-460);
 
-    this.player.anims.play('left', true);
+
 }
 else if (this.cursors.right.isDown)
 {
     this.player.setVelocityX(460);
 
-    this.player.anims.play('right', true);
 }
 else if (this.cursors.up.isDown)
 {
     this.player.setVelocityY(-460);
 
-    this.player.anims.play('up', true);
+  
 }
 else if (this.cursors.down.isDown)
 {
     this.player.setVelocityY(460);
 
-    this.player.anims.play('up', true);
+  
 }
 else
 {
     this.player.setVelocityX(0);
     this.player.setVelocityY(0);
 
-    this.player.anims.play('turn');
 }
 
-if (this.cursors.up.isDown && this.player.body.touching.down)
-{
-    this.player.setVelocityY(-330);
-}
+
+
   }
 }
