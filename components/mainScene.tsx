@@ -22,10 +22,10 @@ export class MainScene extends Scene {
     this.grid = this.add.grid(
       width / 2,
       height / 2,
-      1000,
-      1000,
-      100,
-      100,
+      width,
+      height,
+      width/15,
+      height/10,
       0xffffff,
       0.2,
       0 // specify the size of each cell
