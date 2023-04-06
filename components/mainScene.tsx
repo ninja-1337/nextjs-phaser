@@ -39,8 +39,8 @@ export class MainScene extends Scene {
   );
   this.player.setAccelerationX(0);
   this.player.setAccelerationY(0);
-  this.player.setBounce(0.2);
-  this.player.setCollideWorldBounds(true,true);  
+  this.player.setBounce(0,0);
+  this.player.setCollideWorldBounds(true);  
   
   
   this.player.setActive(true);
