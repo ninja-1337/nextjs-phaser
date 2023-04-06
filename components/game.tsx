@@ -18,10 +18,13 @@ const gameConfig: Types.Core.GameConfig = {
     mode: Phaser.Scale.FIT,
     autoCenter: Phaser.Scale.CENTER_BOTH,
   },
+  fps: {
+    target: 63,
+    },
   render: {
     antialias: false,
-    pixelArt: true,
-    roundPixels: true,
+    pixelArt: false,
+    roundPixels: false,
   },
   scene: MainScene,
 };

@@ -13,8 +13,8 @@ const gameConfig: Types.Core.GameConfig = {
   },
   render: {
     antialias: false,
-    pixelArt: true,
-    roundPixels: true,
+    pixelArt: false,
+    roundPixels: false,
   },
   scene: MainScene,
 };
